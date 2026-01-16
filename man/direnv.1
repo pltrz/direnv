@@ -65,13 +65,6 @@ Add the following line at the end of the \fB~/.zshrc\fR file:
 eval "$(direnv hook zsh)"
 .EE
 
-.SS YSH (Oils)
-Add the following line to your \fB~/.config/oils/yshrc\fR file:
-
-.EX
-eval "$(direnv hook ysh)"
-.EE
-
 .SS FISH
 Add the following line at the end of the \fB$XDG_CONFIG_HOME/fish/config.fish\fR file:
 
@@ -124,6 +117,13 @@ Add the following line to your \fB~/.murex_profile\fR:
 direnv hook murex -> source
 .EE
 
+.SS YSH (Oils)
+Add the following line to your \fB~/.config/oils/yshrc.ysh\fR file:
+
+.EX
+eval $(direnv hook ysh)
+.EE
+
 .SH COMMANDS
 .TP
 \fBdirenv allow [PATH_TO_RC]\fR
@@ -143,7 +143,7 @@ Executes a command after loading the first .envrc or .env found in DIR.
 
 .TP
 \fBdirenv export SHELL\fR
-Loads an .envrc or .env and prints the diff in terms of exports. Supported shells: bash, zsh, ysh, fish, tcsh, elvish, pwsh, murex, json, vim, gha (GitHub Actions), gzenv, systemd.
+Loads an .envrc or .env and prints the diff in terms of exports. Supported shells: bash, zsh, fish, tcsh, elvish, ysh, pwsh, murex, json, vim, gha (GitHub Actions), gzenv, systemd.
 
 .TP
 \fBdirenv fetchurl <url> [<integrity-hash>]\fR

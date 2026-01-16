@@ -24,7 +24,7 @@ and parent directories. If the file exists (and is authorized), it is loaded
 into a **bash** sub-shell and all exported variables are then captured by
 direnv and then made available to the current shell.
 
-It supports hooks for all the common shells like bash, zsh, ysh, tcsh and fish.
+It supports hooks for all the common shells like bash, zsh, tcsh and fish.
 This allows project-specific environment variables without cluttering the
 `~/.profile` file.
 
@@ -37,7 +37,7 @@ used to build solutions similar to rbenv, pyenv and phpenv.
 ### Prerequisites
 
 * Unix-like operating system (macOS, Linux, ...)
-* A supported shell (bash, zsh, ysh, tcsh, fish, elvish, powershell, murex, nushell)
+* A supported shell (bash, zsh, tcsh, fish, elvish, powershell, murex, nushell, ysh)
 
 ### Basic Installation
 

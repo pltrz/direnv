@@ -24,14 +24,6 @@ Add the following line at the end of the `~/.zshrc` file:
 eval "$(direnv hook zsh)"
 ```
 
-## YSH (Oils)
-
-Add the following line to your `~/.config/oils/yshrc` file:
-
-```sh
-eval $(direnv hook ysh)
-```
-
 ## Oh my zsh
 
 Oh my zsh has [a core plugin with direnv](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/direnv) support.
@@ -112,4 +104,12 @@ Add the following line to your `~/.murex_profile` file:
 
 ```sh
 direnv hook murex -> source
+```
+
+## YSH (Oils)
+
+Add the following line at the end of your `~/.config/oils/yshrc`:
+
+```sh
+eval $(direnv hook ysh)
 ```
