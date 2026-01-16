@@ -131,6 +131,14 @@ Add the following line to your `~/.murex_profile`:
 direnv hook murex -> source
 ```
 
+### YSH (Oils)
+
+Add the following line to your `~/.config/oils/yshrc.ysh` file:
+
+```
+eval $(direnv hook ysh)
+```
+
 
 COMMANDS
 --------
@@ -148,7 +156,7 @@ COMMANDS
 : Executes a command after loading the first .envrc or .env found in DIR.
 
 `direnv export SHELL`
-: Loads an .envrc or .env and prints the diff in terms of exports. Supported shells: bash, zsh, fish, tcsh, elvish, pwsh, murex, json, vim, gha (GitHub Actions), gzenv, systemd.
+: Loads an .envrc or .env and prints the diff in terms of exports. Supported shells: bash, zsh, fish, tcsh, elvish, ysh, pwsh, murex, json, vim, gha (GitHub Actions), gzenv, systemd.
 
 `direnv fetchurl <url> [<integrity-hash>]`
 : Fetches a given URL into direnv's CAS.

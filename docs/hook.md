@@ -73,14 +73,6 @@ and add the following line to your `~/.config/elvish/rc.elv` file:
 use direnv
 ```
 
-## YSH (Oils)
-
-Add the following line at the end of `~/.config/oils/yshrc`:
-
-```ysh
-eval $(direnv hook ysh)
-```
-
 ## Nushell
 
 Add the following hook to your `$env.config.hooks.env_change.PWD` list in `config.nu`:
@@ -112,4 +104,12 @@ Add the following line to your `~/.murex_profile` file:
 
 ```sh
 direnv hook murex -> source
+```
+
+## YSH (Oils)
+
+Add the following line at the end of your `~/.config/oils/yshrc`:
+
+```sh
+eval $(direnv hook ysh)
 ```
