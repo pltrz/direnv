@@ -19,6 +19,9 @@ func TestShellDetection(t *testing.T) {
 	assertNotNil(t, DetectShell("-zsh"))
 	assertNotNil(t, DetectShell("-/bin/zsh"))
 	assertNotNil(t, DetectShell("-/usr/local/bin/zsh"))
+	assertNotNil(t, DetectShell("-ysh"))
+	assertNotNil(t, DetectShell("-/bin/ysh"))
+	assertNotNil(t, DetectShell("-/usr/local/bin/ysh"))
 }
 
 func assertNotNil(t *testing.T, a Shell) {

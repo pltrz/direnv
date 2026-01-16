@@ -41,6 +41,7 @@ var supportedShellList = map[string]Shell{
 	"murex":   Murex,
 	"tcsh":    Tcsh,
 	"vim":     Vim,
+	"ysh":     Ysh,
 	"zsh":     Zsh,
 	"pwsh":    Pwsh,
 	"systemd": Systemd,
