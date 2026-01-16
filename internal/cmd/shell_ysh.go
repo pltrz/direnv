@@ -28,9 +28,9 @@ if (prompt_command === null) {
 }
 if (not (';' ++ prompt_command ++ ';').contains(';_direnv_hook;')) {
   if (prompt_command !== '') {
-    setglobal PROMPT_COMMAND = "_direnv_hook;" ++ prompt_command
+    setglobal PROMPT_COMMAND = '_direnv_hook; ' ++ prompt_command
   } else {
-    setglobal PROMPT_COMMAND = "_direnv_hook"
+    setglobal PROMPT_COMMAND = '_direnv_hook'
   }
 }
 `
