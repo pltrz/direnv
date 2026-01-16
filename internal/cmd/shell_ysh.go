@@ -4,6 +4,7 @@ import "fmt"
 
 type ysh struct{}
 
+// Ysh adds support for the Oils YSH shell.
 var Ysh Shell = ysh{}
 
 const yshHook = `
